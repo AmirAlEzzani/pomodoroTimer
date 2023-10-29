@@ -3,6 +3,7 @@ let buttons = document.querySelectorAll(".btn");
 let shortBreakButton = document.getElementById("shortbreak");
 let longBreakButton = document.getElementById("longbreak");
 let startBtn = document.getElementById("btn-start");
+let customBtn = document.getElementById("btn-custom");
 let reset = document.getElementById("btn-reset");
 let pause = document.getElementById("btn-pause");
 let time = document.getElementById("time");
@@ -66,7 +67,7 @@ longBreakButton.addEventListener("click", () => {
     removeFocus();
     longBreakButton.classList.add("btn-focus");
     pauseTimer();
-    minCount = 4;
+    minCount = 14;
     count = 59;
     time.textContent = `${appendZero(minCount + 1)}:00`;
 });
